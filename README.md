@@ -1,5 +1,6 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Projet ANR POPS
+Deciphering the role of Polyamines, key metabolites in virulence of P. aeruginosa and its interaction with S. aureus
+
 
 ![Academic Pages template example](images/homepage.png "Academic Pages template example")
 
