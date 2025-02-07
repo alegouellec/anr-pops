@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "ANR POPS /  24-CE44-1190"
+title                    : "Welcome"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
