@@ -2,8 +2,6 @@
 Deciphering the role of Polyamines, key metabolites in virulence of P. aeruginosa and its interaction with S. aureus
 
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
-
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
