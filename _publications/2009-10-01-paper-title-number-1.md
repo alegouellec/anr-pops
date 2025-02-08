@@ -7,7 +7,7 @@ excerpt: 'This paper explores the metabolic adaptation of Pseudomonas aeruginosa
 date: 2021
 venue: 'Metabolites'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/2021-Moyne.pdf'
+paperurl: 'http://alegouellec/anr-pops.github.io/files/2021-Moyne.pdf'
 citation: 'Moyne et al. (2021). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
