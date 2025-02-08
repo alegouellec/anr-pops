@@ -4,9 +4,13 @@ title: "Project"
 permalink: /Project/
 author_profile: true
 ---
-# Bienvenue sur la nouvelle page
+The WPs, Tasks, Milestones and Deliverables are summarized in the Gantt chart below:
 
-Ce contenu peut être modifié pour refléter les informations souhaitées.
+
+
+Tasks (T), Milestones (M) and Deliverables (D) descriptions are detailed above for each WP. Colour code for WP Lead, Milestones and Deliverable responsibilities: TIMC – CIRI – ICN– ALL
+
+
 
 {% include base_path %}
 
