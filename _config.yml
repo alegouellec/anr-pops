@@ -288,6 +288,24 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _Project
+  - scope:
+      path: ""
+      type: Project
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+    # _Consortium
+  - scope:
+      path: ""
+      type: Consortium
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 
 # Sass/SCSS
