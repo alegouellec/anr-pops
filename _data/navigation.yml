@@ -7,10 +7,10 @@
 main:
 
   - title: "Project"
-    url: /workpackages/
+    url: /Project/
  
   - title: "Consortium"
-    url: /workpackages/
+    url: /Consortium/
     
   - title: "Publications"
     url: /publications/
