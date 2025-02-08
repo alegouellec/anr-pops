@@ -16,7 +16,8 @@ expertise in complementary fields (Figure 1).
 <img src="/image/Consortium.png" alt="Consortium Image" width="600">
 
 
+{% include base_path %}
 
-
-
-
+{% for post in site.Consortium reversed %}
+  {% include archive-single.html %}
+{% endfor %}
