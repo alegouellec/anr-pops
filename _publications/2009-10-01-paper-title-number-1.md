@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 1"
+title: "Metabotypes of Pseudomonas aeruginosa Correlate with Antibiotic Resistance, Virulence and Clinical Outcome in Cystic Fibrosis Chronic Infections"
 collection: publications
 category: manuscripts
 permalink: /publication/2021-paper-title-number-1
