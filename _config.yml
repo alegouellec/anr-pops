@@ -23,7 +23,7 @@ repository               : "anr-pops" #academicpages/academicpages.github.io
 author:
   # Biographic information
   avatar           : "/images/Logo2.png"
-  name             : "ANR POPS /  24-CE44-1190"
+  name             : "ANR POPS / 24-CE44-1190"
   pronouns         : # example: ""  
   bio              : "Our Project Deals with Polyamines and Virulence of Pathogens"
   location         : "France"
@@ -246,13 +246,31 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
+ # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+ # _Project
+  - scope:
+      path: ""
+      type: Project
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _Consortium
+  - scope:
+      path: ""
+      type: Consortium
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _teaching
   - scope:
       path: ""
@@ -288,24 +306,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-  # _Project
-  - scope:
-      path: ""
-      type: Project
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-    # _Consortium
-  - scope:
-      path: ""
-      type: Consortium
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  
 
 
 # Sass/SCSS
