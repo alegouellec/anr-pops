@@ -7,9 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<div style="text-align: justify;">
-
-## Deciphering the Role of Polyamines in Bacterial Virulence and Chronic Infections
+## Deciphering the Role of Polyamines in Bacterial Virulence and Chronic Infections 
 
 The **POPS project** aims to unravel the role of **polyamines** in bacterial virulence, particularly in *Pseudomonas aeruginosa* (Pa) and its interactions with *Staphylococcus aureus* (Sa).  
 
@@ -23,6 +21,6 @@ Recent findings indicate that high polyamine levels correlate with increased Pa 
 
 Polyamines play essential but complex roles in bacterial physiology, affecting **growth, antibiotic resistance, biofilm formation, and virulence**. Given *Pseudomonas aeruginosa* and *Staphylococcus aureus*’s **critical threat status by the WHO** and their impact on **CF and COPD patients**, understanding polyamine regulation could provide new **therapeutic targets** against **chronic infections and antibiotic resistance**.
 
-</div>
+
 
 
