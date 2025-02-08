@@ -7,3 +7,9 @@ author_profile: true
 # Bienvenue sur la nouvelle page
 
 Ce contenu peut être modifié pour refléter les informations souhaitées.
+
+{% include base_path %}
+
+{% for post in site.Project reversed %}
+  {% include archive-single.html %}
+{% endfor %}
