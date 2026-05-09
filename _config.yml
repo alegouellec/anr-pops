@@ -9,31 +9,33 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "About"
+title                    : "ANR POPS"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://alegouellec.github.io/anr-pops/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+name                     : &name "ANR POPS"
+description              : &description "Deciphering the role of polyamines in bacterial virulence and chronic respiratory infections."
+url                      : https://alegouellec.github.io/anr-pops # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "anr-pops" #academicpages/academicpages.github.io
+logo                     : "anr_pops_logo.png"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/Logo_Final.png"
+  avatar           : "anr_pops_logo.png"
   name             : "ANR POPS / 24-CE44-1190"
   pronouns         : # example: ""  
-  bio              : "Our Project Deals with Polyamines and Virulence of Pathogens"
+  bio              : "Polyamines, bacterial virulence, and chronic respiratory infections"
   location         : "France"
   employer         : "CNRS, UGA, UCBL"
   uri              : # URL
-  email            : "" 
+  email            : 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : ""
+  googlescholar    : "https://scholar.google.com/citations?view_op=search_authors&mauthors=Audrey+Le+Gouellec&hl=en"
+  hal              : "https://hal.science/search/index/q/ANR-24-CE44-1190"
   impactstory      : # URL
   orcid            : ""
   semantic         : # URL
@@ -45,12 +47,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "alegouellec/anr-pops"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -118,7 +120,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -136,13 +138,13 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "anr_pops_logo.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Organization # Person or Organization (defaults to Person)
+  name                   : "ANR POPS" # If the user or organization name differs from the site's name
+  links: [] # An array of links to social media profiles
 
 
 # Analytics

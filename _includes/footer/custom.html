@@ -1,3 +1,25 @@
 <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
+{% include base_path %}
+<section class="pops-acknowledgement" aria-labelledby="pops-acknowledgement-title">
+  <div class="pops-acknowledgement__copy">
+    <p class="pops-acknowledgement__eyebrow">Funding and partners</p>
+    <h2 id="pops-acknowledgement-title">Acknowledgement</h2>
+    <p>{{ site.data.partners.funding.text }}</p>
+  </div>
+
+  <div class="pops-logo-strip" aria-label="Funding and institutional partner logos">
+    {% for partner in site.data.partners.funding.logos %}
+      <a class="pops-logo-strip__item pops-logo-strip__item--{{ partner.name | slugify }}" href="{{ partner.url }}" rel="noopener noreferrer">
+        <img src="{{ partner.image | prepend: '/images/' | prepend: base_path }}" alt="{{ partner.name }}">
+      </a>
+    {% endfor %}
+    {% for partner in site.data.partners.partners %}
+      <a class="pops-logo-strip__item pops-logo-strip__item--{{ partner.name | slugify }}" href="{{ partner.url }}" rel="noopener noreferrer">
+        <img src="{{ partner.image | prepend: '/images/' | prepend: base_path }}" alt="{{ partner.name }}">
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<a class="pops-sitemap-link" href="{{ base_path }}/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->

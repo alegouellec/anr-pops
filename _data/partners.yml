@@ -1,0 +1,17 @@
+funding:
+  text: "POPS is funded by the French National Research Agency (ANR) under grant ANR-24-CE44-1190."
+  logos:
+    - name: "Agence nationale de la recherche"
+      url: "https://anr.fr/"
+      image: "logo-anr-sigle.jpg"
+
+partners:
+  - name: "Université Grenoble Alpes"
+    url: "https://www.univ-grenoble-alpes.fr/"
+    image: "logo-uga.png"
+  - name: "CNRS"
+    url: "https://www.cnrs.fr/"
+    image: "logo-cnrs-bleu.png"
+  - name: "Lyon 1 Université"
+    url: "https://www.univ-lyon1.fr/"
+    image: "logo-lyon1.png"

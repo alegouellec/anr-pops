@@ -91,11 +91,13 @@
 
   img {
     max-width: 175px;
-    border-radius: 50%;
+    border-radius: 8px;
+    background: #fff;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid $border-color;
+      border: 1px solid rgba($pops-blue, 0.18);
+      box-shadow: 0 8px 20px rgba($pops-ink, 0.06);
     }
   }
 }

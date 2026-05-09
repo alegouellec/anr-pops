@@ -6,6 +6,7 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
+  min-height: calc(100vh - #{$masthead-height} - 5em);
   padding-left: 1em;
   padding-right: 1em;
   animation: intro 0.3s both;
@@ -104,6 +105,228 @@
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
+  }
+}
+
+.pops-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 0 0 2rem;
+  padding: 1.5rem;
+  border: 1px solid rgba($pops-blue, 0.16);
+  border-top: 4px solid $pops-teal;
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba($pops-teal, 0.10), rgba($pops-green, 0.08)),
+    #fff;
+  box-shadow: 0 14px 34px rgba($pops-ink, 0.06);
+}
+
+.pops-hero__copy {
+  max-width: 42rem;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    color: $pops-ink;
+    line-height: 1.15;
+  }
+}
+
+.pops-eyebrow {
+  margin-bottom: 0.5rem;
+  color: $pops-blue;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.pops-lead {
+  margin-bottom: 0;
+  color: mix(#000, $pops-ink, 8%);
+  font-size: $type-size-4;
+  line-height: 1.5;
+}
+
+.pops-hero__logo {
+  flex: 0 0 auto;
+  width: min(210px, 32vw);
+  height: auto;
+}
+
+.pops-focus-grid,
+.pops-workpackages {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.pops-focus-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pops-focus,
+.pops-wp {
+  border: 1px solid $border-color;
+  border-top: 4px solid $pops-teal;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba($pops-ink, 0.04);
+}
+
+.pops-focus:nth-child(2),
+.pops-wp:nth-child(2) {
+  border-top-color: $pops-gold;
+}
+
+.pops-focus:nth-child(3),
+.pops-wp:nth-child(3) {
+  border-top-color: $pops-green;
+}
+
+.pops-wp:nth-child(4) {
+  border-top-color: $pops-red;
+}
+
+.pops-focus h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: $type-size-5;
+}
+
+.pops-focus p,
+.pops-wp {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.pops-wp__label {
+  display: inline-block;
+  margin-right: 0.4rem;
+  color: $pops-blue;
+  font-weight: 700;
+}
+
+.pops-figure {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid rgba($pops-blue, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 8px 22px rgba($pops-ink, 0.05);
+}
+
+.pops-figure--spaced {
+  margin: 1.5rem 0 1.75rem;
+}
+
+.pops-placeholder {
+  margin: 0 0 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba($pops-blue, 0.16);
+  border-top: 4px solid $pops-teal;
+  border-radius: 8px;
+  background: $pops-soft;
+
+  h2 {
+    margin: 0 0 0.65rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+    color: $pops-ink;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pops-wp-overview {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.pops-wp-card {
+  padding: 1rem;
+  border: 1px solid $border-color;
+  border-left: 5px solid $pops-teal;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba($pops-ink, 0.04);
+
+  h3 {
+    margin: 0.65rem 0 0.5rem;
+    color: $pops-ink;
+    font-size: $type-size-5;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+}
+
+.pops-wp-card:nth-child(2) {
+  border-left-color: $pops-green;
+}
+
+.pops-wp-card:nth-child(3) {
+  border-left-color: $pops-orange;
+}
+
+.pops-wp-card:nth-child(4) {
+  border-left-color: $pops-blue;
+}
+
+.pops-wp-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.pops-wp-card__label {
+  color: $pops-blue;
+}
+
+.pops-wp-card__partners {
+  color: $gray;
+}
+
+.pops-project-note {
+  color: $gray;
+  font-size: 0.95em;
+}
+
+@include breakpoint(max-width $medium) {
+  .pops-hero {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .pops-lead {
+    font-size: $type-size-5;
+  }
+
+  .pops-hero__logo {
+    width: 150px;
+  }
+
+  .pops-focus-grid {
+    grid-template-columns: 1fr;
   }
 }
 
