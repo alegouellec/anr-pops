@@ -4,17 +4,51 @@ title: "Project"
 permalink: /Project/
 author_profile: true
 ---
-The WPs, Tasks, Milestones and Deliverables are summarized in the Gantt chart below:
-
-<img src="/images/GANT_POPS.png" alt="GANTT Image" width="600">
-
-Tasks (T), Milestones (M) and Deliverables (D) descriptions are detailed above for each WP. Colour code for WP Lead, Milestones and Deliverable responsibilities: TIMC – CIRI – ICN– ALL
-
-
-
 {% include base_path %}
+
+The POPS work plan is organized around four work packages that connect bacterial physiology, Pa-Sa interactions, metabolomics network modeling, and evolutionary pathway analysis.
+
+<div class="pops-wp-overview">
+  <section class="pops-wp-card">
+    <div class="pops-wp-card__meta">
+      <span class="pops-wp-card__label">WP1</span>
+      <span class="pops-wp-card__partners">TIMC, ALL</span>
+    </div>
+    <h3>Polyamine metabolism and <em>P. aeruginosa</em> virulence</h3>
+    <p>Generate and characterize isogenic <em>P. aeruginosa</em> mutants, quantify polyamines by targeted LC-MS, and test how polyamines affect virulence-associated phenotypes. This work package anchors the project in controlled bacterial models where causal links can be tested directly.</p>
+  </section>
+
+  <section class="pops-wp-card">
+    <div class="pops-wp-card__meta">
+      <span class="pops-wp-card__label">WP2</span>
+      <span class="pops-wp-card__partners">CIRI, TIMC</span>
+    </div>
+    <h3>Polyamines in <em>P. aeruginosa</em> and <em>S. aureus</em> interactions</h3>
+    <p>Assess how polyamine levels shift the competitive balance between Pa and Sa, from paired-strain interaction assays to physiological responses in Sa. The goal is to understand whether polyamines help structure mixed-species infection contexts.</p>
+  </section>
+
+  <section class="pops-wp-card">
+    <div class="pops-wp-card__meta">
+      <span class="pops-wp-card__label">WP3</span>
+      <span class="pops-wp-card__partners">TIMC, CIRI, ICN</span>
+    </div>
+    <h3>Metabolomics and pathway interpretation</h3>
+    <p>Use mass spectrometry-based metabolomics, annotation workflows, and pathway analysis to connect polyamine exposure with measurable metabolic changes. These datasets will help prioritize mechanisms that are robust across strains and experimental settings.</p>
+  </section>
+
+  <section class="pops-wp-card">
+    <div class="pops-wp-card__meta">
+      <span class="pops-wp-card__label">WP4</span>
+      <span class="pops-wp-card__partners">ICN, TIMC</span>
+    </div>
+    <h3>Comparative genomics and phylogenomics</h3>
+    <p>Develop annotation resources and compare polyamine biosynthetic and regulatory pathways across bacterial genomes to identify conserved and emerging candidates. This comparative layer places POPS findings in a broader evolutionary and functional context.</p>
+  </section>
+</div>
+
+<p class="pops-project-note">WP0 covers coordination, reporting, and consortium management throughout the project.</p>
+
 
 {% for post in site.Project reversed %}
   {% include archive-single.html %}
 {% endfor %}
-

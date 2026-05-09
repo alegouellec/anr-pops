@@ -9,27 +9,26 @@
   margin-right: 0;
   width: 100%;
   clear: both;
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
+  position: relative;
+  bottom: auto;
   height: auto;
-  /* sticky footer fix end */
   margin-top: 3em;
   color: mix(#fff, $gray, 25%);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  background:
+    linear-gradient(180deg, mix(#fff, $pops-ink, 6%), $pops-ink);
+  border-top: 0;
 
   footer {
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 0;
     max-width: 100%;
-    padding: 0 1em 1em;
+    padding: 2em 1em 1em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -41,6 +40,7 @@
     text-decoration: none;
 
     &:hover {
+      color: #fff;
       text-decoration: underline;
     }
   }
@@ -53,7 +53,119 @@
   }
 }
 
+.pops-acknowledgement {
+  margin: 0 0 1.25rem;
+  padding: 1.25rem;
+  color: $pops-ink;
+  background: #fff;
+  border-top: 4px solid $pops-teal;
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(#000, 0.14);
+}
+
+.pops-acknowledgement__copy {
+  max-width: 48rem;
+
+  h2 {
+    margin: 0 0 0.45rem;
+    color: $pops-ink;
+    font-size: $type-size-4;
+    line-height: 1.2;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.pops-acknowledgement__eyebrow {
+  margin: 0 0 0.35rem;
+  color: $pops-blue;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.pops-logo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  margin-top: 1.15rem;
+}
+
+.pops-logo-strip__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  min-height: 76px;
+  padding: 0.65rem 0.85rem;
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+
+  &:hover {
+    border-color: rgba($pops-blue, 0.36);
+    box-shadow: 0 6px 18px rgba($pops-ink, 0.10);
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 128px;
+    max-height: 52px;
+    object-fit: contain;
+  }
+}
+
+.pops-logo-strip__item--agence-nationale-de-la-recherche {
+  width: 178px;
+
+  img {
+    max-width: 154px;
+  }
+}
+
+.pops-logo-strip__item--cnrs {
+  width: 112px;
+
+  img {
+    max-height: 58px;
+  }
+}
+
+.pops-logo-strip__item--universite-grenoble-alpes {
+  width: 184px;
+
+  img {
+    max-width: 160px;
+  }
+}
+
+.pops-logo-strip__item--lyon-1-universite {
+  width: 104px;
+
+  img {
+    max-height: 60px;
+  }
+}
+
+.pops-sitemap-link {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  color: rgba(#fff, 0.82);
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+}
+
 .page__footer-copyright {
+  padding-top: 0.9rem;
+  color: rgba(#fff, 0.74);
+  border-top: 1px solid rgba(#fff, 0.16);
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
@@ -88,5 +200,25 @@
     a {
       white-space: nowrap;
     }
+  }
+}
+
+@include breakpoint(max-width $medium) {
+  .pops-acknowledgement {
+    padding: 1rem;
+  }
+
+  .pops-logo-strip {
+    align-items: stretch;
+    gap: 0.65rem;
+  }
+
+  .pops-logo-strip__item,
+  .pops-logo-strip__item--agence-nationale-de-la-recherche,
+  .pops-logo-strip__item--cnrs,
+  .pops-logo-strip__item--universite-grenoble-alpes,
+  .pops-logo-strip__item--lyon-1-universite {
+    flex: 1 1 132px;
+    width: auto;
   }
 }
